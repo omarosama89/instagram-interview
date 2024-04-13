@@ -1,0 +1,75 @@
+<table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+  <tbody>
+  <tr>
+    <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+      <h1><span style="font-family:arial,helvetica neue,helvetica,sans-serif">Dear <%= @client.full_name %>,</span></h1>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+  <tbody class="mcnTextBlockOuter">
+  <tr>
+    <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+      <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+        <tbody>
+        <tr>
+          <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+            <h2 style="text-align: center;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif">We've received your Subscription!<br>
+                  <br>
+                  <strong>Order code :</strong>&nbsp;<%= @subscription.order_code %></span>
+            </h2>
+            &nbsp;
+            <div style="text-align: center;">
+              <span style="font-family:lucida sans unicode,lucida grande,sans-serif">Thanks for using Instajax services.</span>
+            </div>
+            <div style="text-align: center;">&nbsp;</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+  <tbody class="mcnTextBlockOuter">
+  <tr>
+    <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+      <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+        <tbody>
+        <tr>
+          <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+            <h1 class="null">
+              <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Subscription details :&nbsp;</strong></span>
+            </h1>
+            <div style="text-align: center;">
+              <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Price : <b><%= @subscription.paid %>&nbsp;$</b></strong></span><br>
+              <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Service : <b><%= @subscription_service.description %></b></strong></span><br>
+              <% if @subscription_service.sub_type == 'limited' %>
+                <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Number of posts : <b><%= @subscription.posts_count %></b></strong></span><br>
+              <% else %>
+                <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Number of posts : <b>unlimied (1 month)</b></strong></span><br>
+              <% end %>
+              <span style="font-family:lucida sans unicode,lucida grande,sans-serif"><strong>Number of likes : <b><%= @subscription.likes_count %></b></strong></span><br>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+  <tbody class="mcnTextBlockOuter">
+  <tr>
+    <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+    </td>
+  </tr>
+  </tbody>
+</table>

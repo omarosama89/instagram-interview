@@ -1,0 +1,26 @@
+development: &default
+  mode: sandbox
+  client_id: EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM
+  client_secret: EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM
+  # # with Proxy
+  # http_proxy: http://proxy-ipaddress:3129/
+  # # with CA File
+  # ssl_options:
+  #   ca_file: config/cacert.pem
+  # # Override Endpoint
+  # rest_endpoint: https://api.sandbox.paypal.com
+  ssl_options:
+    ca_file: null
+test:
+  <<: *default
+production:
+  # <<: *default
+#  mode: sandbox
+#  client_id: EBWKjlELKMYqRNQ6sYvFo64FtaRLRR5BdHEESmha49TM
+#  client_secret: EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM
+  mode: live
+  client_id: AY-FsNL9HFmed0qSp43rZjlG1Qr7FkVAGUt47Yk1aQhgrNgkkcN9V1GieAxqt48DWCEAXO23wAJplbf-
+  client_secret: EHEWFKs-RP1FKVJN8P3gGMmT5ZZre7bbX5vgOs9vWyssuUoJ8KJp3xWKlGHAurPBU3fmMeIGVLuYEsKC
+  ssl_options:
+    ca_file: null
+    

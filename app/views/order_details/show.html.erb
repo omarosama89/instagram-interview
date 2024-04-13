@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @order_detail.link %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @order_detail.amount %>
+</p>
+
+<p>
+  <strong>Api order:</strong>
+  <%= @order_detail.api_order_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order_detail.status %>
+</p>
+
+<p>
+  <strong>Order row:</strong>
+  <%= @order_detail.order_row %>
+</p>
+
+<%= link_to 'Edit', edit_order_detail_path(@order_detail) %> |
+<%= link_to 'Back', order_details_path %>

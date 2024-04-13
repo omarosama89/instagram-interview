@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Client Records</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Likes</th>
+    <th>Followers</th>
+    <th>Video views</th>
+    <th>Comments</th>
+    <th>Custom comments</th>
+    <th>Total paid</th>
+    <th>Total net</th>
+    <th>Client</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @client_records.each do |client_record| %>
+    <tr>
+      <td><%= client_record.likes %></td>
+      <td><%= client_record.followers %></td>
+      <td><%= client_record.video_views %></td>
+      <td><%= client_record.comments %></td>
+      <td><%= client_record.custom_comments %></td>
+      <td><%= client_record.total_paid %></td>
+      <td><%= client_record.total_net %></td>
+      <td><%= client_record.client_id %></td>
+      <td><%= link_to 'Show', client_record %></td>
+      <td><%= link_to 'Edit', edit_client_record_path(client_record) %></td>
+      <td><%= link_to 'Destroy', client_record, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client record', new_client_record_path %>

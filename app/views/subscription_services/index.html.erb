@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Subscription Services</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Description</th>
+    <th>Minimum</th>
+    <th>Maximum</th>
+    <th>Price</th>
+    <th>Unit</th>
+    <th>Factor</th>
+    <th>Power</th>
+    <th>Intercept</th>
+    <th>Sale</th>
+    <th>Req method</th>
+    <th>Sub type</th>
+    <th>Api</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @subscription_services.each do |subscription_service| %>
+    <tr>
+      <td><%= subscription_service.description %></td>
+      <td><%= subscription_service.minimum %></td>
+      <td><%= subscription_service.maximum %></td>
+      <td><%= subscription_service.price %></td>
+      <td><%= subscription_service.unit %></td>
+      <td><%= subscription_service.factor %></td>
+      <td><%= subscription_service.power %></td>
+      <td><%= subscription_service.intercept %></td>
+      <td><%= subscription_service.sale %></td>
+      <td><%= subscription_service.req_method %></td>
+      <td><%= subscription_service.sub_type %></td>
+      <td><%= subscription_service.api %></td>
+      <td><%= link_to 'Show', subscription_service %></td>
+      <td><%= link_to 'Edit', edit_subscription_service_path(subscription_service) %></td>
+      <td><%= link_to 'Destroy', subscription_service, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subscription service', new_subscription_service_path %>

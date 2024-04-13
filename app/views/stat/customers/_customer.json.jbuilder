@@ -1,0 +1,9 @@
+json.start_at customer.start_at
+json.end_at customer.end_at
+json.period customer.period
+json.client_id customer.client_id
+json.percentage_net customer.percentage_net
+json.amount_orders customer.amount_orders
+json.percentage_orders customer.percentage_orders
+json.amount_links customer.amount_links
+json.percentage_links customer.percentage_links

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @subscription.username %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @subscription.paid %>
+</p>
+
+<p>
+  <strong>Net:</strong>
+  <%= @subscription.net %>
+</p>
+
+<p>
+  <strong>Order code:</strong>
+  <%= @subscription.order_code %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @subscription.transaction_id %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @subscription.payment_id %>
+</p>
+
+<p>
+  <strong>Posts count:</strong>
+  <%= @subscription.posts_count %>
+</p>
+
+<p>
+  <strong>Likes count:</strong>
+  <%= @subscription.likes_count %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @subscription.status %>
+</p>
+
+<p>
+  <strong>Client ip:</strong>
+  <%= @subscription.client_ip %>
+</p>
+
+<p>
+  <strong>Verified:</strong>
+  <%= @subscription.verified %>
+</p>
+
+<p>
+  <strong>Created by admin:</strong>
+  <%= @subscription.created_by_admin %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @subscription.client %>
+</p>
+
+<p>
+  <strong>Subscription service:</strong>
+  <%= @subscription.subscription_service %>
+</p>
+
+<%= link_to 'Edit', edit_subscription_path(@subscription) %> |
+<%= link_to 'Back', subscriptions_path %>

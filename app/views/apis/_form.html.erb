@@ -1,0 +1,82 @@
+<%= form_for(api) do |f| %>
+  <% if api.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(api.errors.count, "error") %> prohibited this api from being saved:</h2>
+
+      <ul>
+        <% api.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :key_attr %>
+    <%= f.text_field :key_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :key %>
+    <%= f.text_field :key %>
+  </div>
+
+  <div class="field">
+    <%= f.label :action_attr %>
+    <%= f.text_field :action_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :orderid_attr %>
+    <%= f.text_field :orderid_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount_attr %>
+    <%= f.text_field :amount_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link_attr %>
+    <%= f.text_field :link_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type_attr %>
+    <%= f.text_field :type_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :custom_comments_attr %>
+    <%= f.text_field :custom_comments_attr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :req_method %>
+    <%= f.text_field :req_method %>
+  </div>
+
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= f.label :active %>
+    <%= f.check_box :active %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

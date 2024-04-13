@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_code: MyString
+  verified: false
+  service: one
+  client: one
+
+two:
+  order_code: MyString
+  verified: false
+  service: two
+  client: two

@@ -1,0 +1,21 @@
+development:
+  host: 'http://localhost:4200'
+  order_paypal_return_url: 'http://localhost:3000/api/order_rows/approve'
+  order_paypal_cancel_url: 'http://localhost:3000/api/order_rows/cancel'
+  mob_order_paypal_return_url: 'http://localhost:3000/api/mob/order_rows/approve'
+  mob_order_paypal_cancel_url: 'http://localhost:3000/api/mob/order_rows/cancel'
+  sub_paypal_return_url: 'http://localhost:3000/api/subscriptions/approve'
+  sub_paypal_cancel_url: 'http://localhost:3000/api/subscriptions/cancel'
+  rapid_api_key: '4ed844546fmshf9165436e045d22p1d02f1jsn873e05bdb6d5'
+  rapid_api_host: 'instagram130.p.rapidapi.com'
+
+production:
+  host: 'https://instajax.com'
+  order_paypal_return_url: 'https://backend.instajax.com/api/order_rows/approve'
+  order_paypal_cancel_url: 'https://backend.instajax.com/api/order_rows/cancel'
+  mob_order_paypal_return_url: 'https://backend.instajax.com/api/mob/order_rows/approve'
+  mob_order_paypal_cancel_url: 'https://backend.instajax.com/api/mob/order_rows/cancel'
+  sub_paypal_return_url: 'https://backend.instajax.com/api/subscriptions/approve'
+  sub_paypal_cancel_url: 'https://backend.instajax.com/api/subscriptions/cancel'
+  rapid_api_key: '4ed844546fmshf9165436e045d22p1d02f1jsn873e05bdb6d5'
+  rapid_api_host: 'instagram130.p.rapidapi.com'

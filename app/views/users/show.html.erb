@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @api.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @api.url %>
+</p>
+
+<p>
+  <strong>Key attr:</strong>
+  <%= @api.key_attr %>
+</p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @api.key %>
+</p>
+
+<p>
+  <strong>Action attr:</strong>
+  <%= @api.action_attr %>
+</p>
+
+<p>
+  <strong>Orderid attr:</strong>
+  <%= @api.orderid_attr %>
+</p>
+
+<p>
+  <strong>Amount attr:</strong>
+  <%= @api.amount_attr %>
+</p>
+
+<p>
+  <strong>Link attr:</strong>
+  <%= @api.link_attr %>
+</p>
+
+<p>
+  <strong>Type attr:</strong>
+  <%= @api.type_attr %>
+</p>
+
+<p>
+  <strong>Custom comments attr:</strong>
+  <%= @api.custom_comments_attr %>
+</p>
+
+<p>
+  <strong>Req method:</strong>
+  <%= @api.req_method %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @api.username %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @api.active %>
+</p>
+
+<%= link_to 'Edit', edit_api_path(@api) %> |
+<%= link_to 'Back', apis_path %>

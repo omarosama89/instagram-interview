@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  s_type: MyString
+  service_family: 1
+  minimum: 1
+  maximum: 1
+  price: 1.5
+  unit: 1
+  factor: 1.5
+  power: 1.5
+  intercept: 1.5
+  sale: 1.5
+  has_note: false
+  note: MyString
+  req_method: 1
+  active: false
+  custom_comments_flag: false
+  api: one
+
+two:
+  description: MyString
+  s_type: MyString
+  service_family: 1
+  minimum: 1
+  maximum: 1
+  price: 1.5
+  unit: 1
+  factor: 1.5
+  power: 1.5
+  intercept: 1.5
+  sale: 1.5
+  has_note: false
+  note: MyString
+  req_method: 1
+  active: false
+  custom_comments_flag: false
+  api: two

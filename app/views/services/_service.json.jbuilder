@@ -1,0 +1,1 @@
+json.extract! service, :id, :description, :minimum, :maximum, :price, :unit, :factor, :power, :intercept, :sale, :has_note, :note, :req_method, :active, :s_type, :service_family, :custom_comments_flag, :api_id, :created_at, :updated_at

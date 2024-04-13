@@ -1,0 +1,1 @@
+json.net_income @net_income, partial: 'stat/net_incomes/net_income', as: :net_income

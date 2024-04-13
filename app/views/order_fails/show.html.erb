@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @order_fail.message %>
+</p>
+
+<p>
+  <strong>Order detail:</strong>
+  <%= @order_fail.order_detail %>
+</p>
+
+<%= link_to 'Edit', edit_order_fail_path(@order_fail) %> |
+<%= link_to 'Back', order_fails_path %>

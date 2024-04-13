@@ -1,0 +1,77 @@
+<%= form_for(@service) do |f| %>
+  <% if @service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+        <% @service.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :minimum %><br>
+    <%= f.number_field :minimum %>
+  </div>
+  <div class="field">
+    <%= f.label :maximum %><br>
+    <%= f.number_field :maximum %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :unit %><br>
+    <%= f.number_field :unit %>
+  </div>
+  <div class="field">
+    <%= f.label :factor %><br>
+    <%= f.text_field :factor %>
+  </div>
+  <div class="field">
+    <%= f.label :power %><br>
+    <%= f.text_field :power %>
+  </div>
+  <div class="field">
+    <%= f.label :intercept %><br>
+    <%= f.text_field :intercept %>
+  </div>
+  <div class="field">
+    <%= f.label :sale %><br>
+    <%= f.text_field :sale %>
+  </div>
+  <div class="field">
+    <%= f.label :has_note %><br>
+    <%= f.check_box :has_note %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_field :note %>
+  </div>
+  <div class="field">
+    <%= f.label :req_method %><br>
+    <%= f.text_field :req_method %>
+  </div>
+  <div class="field">
+    <%= f.label :service_family %><br>
+    <%= f.text_field :service_family %>
+  </div>
+  <div class="field">
+    <%= f.label :custom_comments_flag %><br>
+    <%= f.check_box :custom_comments_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :api_id %><br>
+    <%= f.text_field :api_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
