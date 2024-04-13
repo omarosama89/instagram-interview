@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @order_row.paid %>
+</p>
+
+<p>
+  <strong>Net:</strong>
+  <%= @order_row.net %>
+</p>
+
+<p>
+  <strong>Order code:</strong>
+  <%= @order_row.order_code %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @order_row.transaction_id %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @order_row.payment_id %>
+</p>
+
+<p>
+  <strong>Client ip:</strong>
+  <%= @order_row.client_ip %>
+</p>
+
+<p>
+  <strong>Verified:</strong>
+  <%= @order_row.verified %>
+</p>
+
+<p>
+  <strong>Created by admin:</strong>
+  <%= @order_row.created_by_admin %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @order_row.client %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @order_row.service %>
+</p>
+
+<%= link_to 'Edit', edit_order_row_path(@order_row) %> |
+<%= link_to 'Back', order_rows_path %>

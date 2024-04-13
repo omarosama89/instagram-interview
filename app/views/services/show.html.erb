@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @service.description %>
+</p>
+
+<p>
+  <strong>Minimum:</strong>
+  <%= @service.minimum %>
+</p>
+
+<p>
+  <strong>Maximum:</strong>
+  <%= @service.maximum %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @service.price %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @service.unit %>
+</p>
+
+<p>
+  <strong>Factor:</strong>
+  <%= @service.factor %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @service.power %>
+</p>
+
+<p>
+  <strong>Intercept:</strong>
+  <%= @service.intercept %>
+</p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @service.sale %>
+</p>
+
+<p>
+  <strong>Has note:</strong>
+  <%= @service.has_note %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @service.note %>
+</p>
+
+<p>
+  <strong>Req method:</strong>
+  <%= @service.req_method %>
+</p>
+
+<p>
+  <strong>Service family:</strong>
+  <%= @service.service_family %>
+</p>
+
+<p>
+  <strong>Custom comments flag:</strong>
+  <%= @service.custom_comments_flag %>
+</p>
+
+<p>
+  <strong>Api:</strong>
+  <%= @service.api %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

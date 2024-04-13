@@ -1,0 +1,73 @@
+<%= form_for(@subscription) do |f| %>
+  <% if @subscription.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
+
+      <ul>
+        <% @subscription.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :paid %><br>
+    <%= f.text_field :paid %>
+  </div>
+  <div class="field">
+    <%= f.label :net %><br>
+    <%= f.text_field :net %>
+  </div>
+  <div class="field">
+    <%= f.label :order_code %><br>
+    <%= f.text_field :order_code %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_id %><br>
+    <%= f.text_field :transaction_id %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_id %><br>
+    <%= f.text_field :payment_id %>
+  </div>
+  <div class="field">
+    <%= f.label :posts_count %><br>
+    <%= f.number_field :posts_count %>
+  </div>
+  <div class="field">
+    <%= f.label :likes_count %><br>
+    <%= f.number_field :likes_count %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :client_ip %><br>
+    <%= f.text_field :client_ip %>
+  </div>
+  <div class="field">
+    <%= f.label :verified %><br>
+    <%= f.check_box :verified %>
+  </div>
+  <div class="field">
+    <%= f.label :created_by_admin %><br>
+    <%= f.check_box :created_by_admin %>
+  </div>
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subscription_service_id %><br>
+    <%= f.text_field :subscription_service_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

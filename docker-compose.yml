@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: postgres:12
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: 'instajax'
+      POSTGRES_PASSWORD: 'instajax123'
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - '3000:3000'
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: 'postgresql://instajax:instajax123@db:5432/instajax'
+

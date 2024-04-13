@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Order Fails</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Message</th>
+    <th>Order detail</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @order_fails.each do |order_fail| %>
+    <tr>
+      <td><%= order_fail.message %></td>
+      <td><%= order_fail.order_detail %></td>
+      <td><%= link_to 'Show', order_fail %></td>
+      <td><%= link_to 'Edit', edit_order_fail_path(order_fail) %></td>
+      <td><%= link_to 'Destroy', order_fail, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order Fail', new_order_fail_path %>

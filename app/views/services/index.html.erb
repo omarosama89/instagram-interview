@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Services</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Description</th>
+    <th>Minimum</th>
+    <th>Maximum</th>
+    <th>Price</th>
+    <th>Unit</th>
+    <th>Factor</th>
+    <th>Power</th>
+    <th>Intercept</th>
+    <th>Sale</th>
+    <th>Has note</th>
+    <th>Note</th>
+    <th>Req method</th>
+    <th>Service family</th>
+    <th>Custom comments flag</th>
+    <th>Api</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @services.each do |service| %>
+    <tr>
+      <td><%= service.description %></td>
+      <td><%= service.minimum %></td>
+      <td><%= service.maximum %></td>
+      <td><%= service.price %></td>
+      <td><%= service.unit %></td>
+      <td><%= service.factor %></td>
+      <td><%= service.power %></td>
+      <td><%= service.intercept %></td>
+      <td><%= service.sale %></td>
+      <td><%= service.has_note %></td>
+      <td><%= service.note %></td>
+      <td><%= service.req_method %></td>
+      <td><%= service.service_family %></td>
+      <td><%= service.custom_comments_flag %></td>
+      <td><%= service.api %></td>
+      <td><%= link_to 'Show', service %></td>
+      <td><%= link_to 'Edit', edit_service_path(service) %></td>
+      <td><%= link_to 'Destroy', service, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service', new_service_path %>

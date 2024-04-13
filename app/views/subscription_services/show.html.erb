@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @subscription_service.description %>
+</p>
+
+<p>
+  <strong>Minimum:</strong>
+  <%= @subscription_service.minimum %>
+</p>
+
+<p>
+  <strong>Maximum:</strong>
+  <%= @subscription_service.maximum %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @subscription_service.price %>
+</p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @subscription_service.unit %>
+</p>
+
+<p>
+  <strong>Factor:</strong>
+  <%= @subscription_service.factor %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @subscription_service.power %>
+</p>
+
+<p>
+  <strong>Intercept:</strong>
+  <%= @subscription_service.intercept %>
+</p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @subscription_service.sale %>
+</p>
+
+<p>
+  <strong>Req method:</strong>
+  <%= @subscription_service.req_method %>
+</p>
+
+<p>
+  <strong>Sub type:</strong>
+  <%= @subscription_service.sub_type %>
+</p>
+
+<p>
+  <strong>Api:</strong>
+  <%= @subscription_service.api %>
+</p>
+
+<%= link_to 'Edit', edit_subscription_service_path(@subscription_service) %> |
+<%= link_to 'Back', subscription_services_path %>

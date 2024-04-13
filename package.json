@@ -1,0 +1,7 @@
+{
+  "name": "instajax",
+  "private": true,
+  "dependencies": {
+    "ember-cli": "^2.8.0"
+  }
+}

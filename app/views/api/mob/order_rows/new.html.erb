@@ -1,0 +1,8 @@
+<h2>Please wait...</h2>
+<%= form_with url: api_mob_order_rows_create_path, method: :post, html: {name: 'f1' } do |f| %>
+  <%= f.hidden_field :service_id, value: '5' %>
+  <%= f.hidden_field :links, value: 'link#1,link#2' %>
+  <%= f.hidden_field :amounts, value: '25,50' %>
+  <%= f.hidden_field :kind, value: 'mob' %>
+  <%= f.hidden_field :custom_comments %>
+<% end %>

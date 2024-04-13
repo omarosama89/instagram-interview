@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Apis</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Url</th>
+    <th>Key attr</th>
+    <th>Key</th>
+    <th>Action attr</th>
+    <th>Orderid attr</th>
+    <th>Amount attr</th>
+    <th>Link attr</th>
+    <th>Type attr</th>
+    <th>Custom comments attr</th>
+    <th>Req method</th>
+    <th>Username</th>
+    <th>Active</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @apis.each do |api| %>
+    <tr>
+      <td><%= api.name %></td>
+      <td><%= api.url %></td>
+      <td><%= api.key_attr %></td>
+      <td><%= api.key %></td>
+      <td><%= api.action_attr %></td>
+      <td><%= api.orderid_attr %></td>
+      <td><%= api.amount_attr %></td>
+      <td><%= api.link_attr %></td>
+      <td><%= api.type_attr %></td>
+      <td><%= api.custom_comments_attr %></td>
+      <td><%= api.req_method %></td>
+      <td><%= api.username %></td>
+      <td><%= api.active %></td>
+      <td><%= link_to 'Show', api %></td>
+      <td><%= link_to 'Edit', edit_api_path(api) %></td>
+      <td><%= link_to 'Destroy', api, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Api', new_api_path %>

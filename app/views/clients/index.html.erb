@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Clients</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Payer</th>
+    <th>Email</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>City</th>
+    <th>Postal code</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Discount</th>
+    <th>Send email flag</th>
+    <th>Blocked falg</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @clients.each do |client| %>
+    <tr>
+      <td><%= client.payer_id %></td>
+      <td><%= client.email %></td>
+      <td><%= client.country %></td>
+      <td><%= client.state %></td>
+      <td><%= client.city %></td>
+      <td><%= client.postal_code %></td>
+      <td><%= client.first_name %></td>
+      <td><%= client.last_name %></td>
+      <td><%= client.discount %></td>
+      <td><%= client.send_email_flag %></td>
+      <td><%= client.blocked_falg %></td>
+      <td><%= link_to 'Show', client %></td>
+      <td><%= link_to 'Edit', edit_client_path(client) %></td>
+      <td><%= link_to 'Destroy', client, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client', new_client_path %>

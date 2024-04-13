@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @client_record.likes %>
+</p>
+
+<p>
+  <strong>Followers:</strong>
+  <%= @client_record.followers %>
+</p>
+
+<p>
+  <strong>Video views:</strong>
+  <%= @client_record.video_views %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @client_record.comments %>
+</p>
+
+<p>
+  <strong>Custom comments:</strong>
+  <%= @client_record.custom_comments %>
+</p>
+
+<p>
+  <strong>Total paid:</strong>
+  <%= @client_record.total_paid %>
+</p>
+
+<p>
+  <strong>Total net:</strong>
+  <%= @client_record.total_net %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @client_record.client_id %>
+</p>
+
+<%= link_to 'Edit', edit_client_record_path(@client_record) %> |
+<%= link_to 'Back', client_records_path %>

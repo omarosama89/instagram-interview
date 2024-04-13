@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  url: MyString
+  key_attr: MyString
+  key: MyString
+  action_attr: MyString
+  orderid_attr: MyString
+  amount_attr: MyString
+  link_attr: MyString
+  type_attr: MyString
+  custom_comments_attr: MyString
+  username: MyString
+
+two:
+  name: MyString
+  url: MyString
+  key_attr: MyString
+  key: MyString
+  action_attr: MyString
+  orderid_attr: MyString
+  amount_attr: MyString
+  link_attr: MyString
+  type_attr: MyString
+  custom_comments_attr: MyString
+  username: MyString
